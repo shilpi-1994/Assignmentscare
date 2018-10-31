@@ -1,0 +1,44 @@
+body{
+    background-color: #EEEEEE;
+}
+
+.container{
+    background-color: #DDDDDD;
+    width: 860px;
+    height: 800px;
+    margin :-8px auto;
+}
+
+.left_container{
+    float: left;
+    text-align: left;
+    margin: 30px 30px 0px 10px;
+}
+
+.center_container{
+    background-color: white;
+    width:620px;
+    height: 800px;
+    margin: -8px auto; 
+}
+
+.image_styling_right{
+    float: right;
+    margin: 30px;
+}
+
+.image_styling_left{
+    float: left;
+    margin: 30px;
+}
+
+.right_container{
+    float: right;
+    box-sizing: border-box;
+    margin-top: -790px;
+    margin-right: -30px;
+}
+
+p{
+    margin:10px;
+}

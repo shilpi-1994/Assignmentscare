@@ -1,0 +1,19 @@
+.box-one{
+    width: 200px;
+    height: 200px;
+    color: white;
+    background-color: red;
+    position: relative;
+    margin-left: -8px;
+    margin-top: -8px;
+}
+
+.box-two{
+    width: 200px;
+    height: 200px;
+    color: white;
+    background-color: blue;
+    position: absolute;
+    margin-top: -180px;
+    margin-left: 10px;
+}

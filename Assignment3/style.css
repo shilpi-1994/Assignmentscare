@@ -1,0 +1,25 @@
+body{
+    font-size: 20px;
+    padding: 10px;
+}
+
+
+@media only screen and (max-width: 960px){
+    body{
+        width: 960px;
+    }
+
+    nav, aside{
+        width: 200px;
+    }
+
+    article{
+        width: 500px;
+    }
+    nav, aside, article{
+        float: left;
+    }
+    footer{
+        clear: both;
+    }
+}
