@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="getusers.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+<script>
+
+
+$(document).ready(function(){
+    $("button").click(function(){
+
+$.ajax({
+    url: 'http://jsonplaceholder.typicode.com/users',
+    dataType: 'JSON',
+    type: 'get',
+    success : function(data){
+        var json_obj = data;
+
+        var output = '<table>';
+
+           output += "<tr> <th>ID</th> <th>Name</th> <<th>Username</th> <th>Email</th> </tr>"; 
+           
+
+
+        for(var i in json_obj){
+            output += "<tr";
+            output += "<tr><td>" + json_obj[i].id + "</td><td>" + json_obj[i].name + "</td><td>" + json_obj[i].username + "</td><td>" + json_obj[i].email+ " </td></tr>";
+            output += "</tr>";
+            }
+        output+="</table>";
+        $('table').html(output).fadeIn("slow");
+    }
+    })
+})
+
+})
+
+</script>
+</head>
+<body>
+
+<div class="jumbotron jumbotron-fluid container text-align">
+    <h2>Employee Details</h2>
+    <button class="btn btn-info active button-padding">Get Users</button>
+
+</div>
+
+
+<hr>
+
+<table class="table table-striped table-bordered table-hover table-sm .table-responsive">
+    <tr>
+        
+    </tr>
+</table>
+
+<p></p>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
