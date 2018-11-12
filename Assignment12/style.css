@@ -1,0 +1,30 @@
+body{
+    background-color:#e0e0e0;
+}
+
+
+.style_one{
+    color : green;
+}
+
+.style_two{
+    color: red;
+}
+
+p.style_one > a.style_two{
+    color: yellow;
+}
+
+.style_one.style_two{
+    color: blue;
+}
+
+.style_one , .style_one.style_two{
+    display: inline;
+}
+
+.style_two{
+    margin-bottom: 5em;
+    background: gray;
+    padding: 20px;
+}
