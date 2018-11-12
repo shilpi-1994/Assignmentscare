@@ -1,0 +1,17 @@
+.outer{
+    width: 100px;
+    height: 100px;
+    float: right;
+    position: relative;
+}
+
+.inner{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: -1580px;
+    bottom: -780px;
+  
+    
+    
+}
