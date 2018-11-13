@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Local Storage Example</title> 
+  </head>
+
+<body onload="loadData()">
+  <h1>Local Storage</h1>
+  <input type="text" id="textvalue">
+  <input type="button" value="Save" onclick="saveData()">
+  <input type="button" value="Remove" onclick="removeData()">
+
+
+  <script>
+      function saveData(){
+        var textdata = document.getElementById('textvalue').value;
+        localStorage.setItem('text', textdata);
+      }
+      function loadData(){
+        var storedData = localStorage.getItem('text');
+        if(storedData){
+          document.getElementById('textvalue').value = storedData;
+        }
+      }
+      function removeData(){
+        document.getElementById('textvalue').value = "";
+        localStorage.removeItem('text');
+      }
+  
+  </script>
+</body>
+</html>

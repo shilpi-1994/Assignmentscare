@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Web Storage Example</title> 
+  </head>
+
+<body>
+  <script type="text/javascript">
+    if(sessionStorage.clicks) {
+      sessionStorage.clicks = Number(sessionStorage.clicks) + 1;
+    }
+    else{
+      sessionStorage.clicks = 1;
+    }
+    document.write("Total Clicks: " +sessionStorage.clicks);
+    </script>
+
+    <p>
+      Refresh the page!!!
+    </p>
+</body>
