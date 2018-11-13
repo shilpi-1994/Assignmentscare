@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Checkout Page</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+	<div class="container">
+
+	<div class="top_center">
+		<img src="index_icon.png" height="72px" width="72px">
+		<h1>Checkout Form</h1>
+		<h3 id="stylefont">Below is an example form built entirely with Bootstrap's form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.</h3>
+	</div>
+
+	<div id="navbar">
+	  <a class="active" href="javascript:void(0)">Home</a>
+	  <a href="#style_head">Billing Address</a>
+	  <a href="#payment">Payment</a>
+	</div>
+
+	<div class="row">
+		<h2 id="style_head">Billing Address</h2>
+		<form method="POST">
+		<div class="left">
+			<p>First Name</p>
+			<input type="text" name="firstname" size="35">
+			<p>Username</p>
+			<input type="text" name="firstname" placeholder="Username" size="83" ">
+			<p>Email<span>(Optional)</span></p>
+			<input type="email" name="email" placeholder="you@example.com" size="83">
+			<p>Address</p>
+			<input type="text" name="address" size="83">
+			<p>Address 2<span>(Optional)</span></p>
+			<input type="text" name="address" placeholder="Apartment or suite" size="83">
+
+			<div>
+				<p>Country</p>
+				<select name="country" width="50px">
+				<option value="choose">Choose...</option>
+				<option value="unitedstates">United States</option>
+				</select>
+			</div>
+		</div>
+
+		
+		<div class="center">
+			<p>Last Name</p>
+			<input type="text" name="lastname" size="35">
+		</div>
+
+		<div class="right">
+			<h2 id="style1">Your Cart
+				<span class="price" style="color:black"></span>
+			 	<b style="float: right;">4</b>
+			</h2>
+	
+		      <p>Product 1</a> <span class="price">$15</span></p>
+		      <p>Product 2</a> <span class="price">$5</span></p>
+		      <p>Product 3</a> <span class="price">$8</span></p>
+		      <p>Product 4</a> <span class="price">$2</span></p>
+		      <hr>
+		      <p>Total <span class="price" style="color:black"><b>$30</b></span></p>
+		</div>
+	</div>
+
+	<div class="style2">
+		<hr>
+		<input  type="checkbox" name="condition1" value="sameaddress">Shipping address is the same as my billing address<br>
+		<input  type="checkbox" name="condition2" value="saveinfo">Save this information for next time<br>
+		<hr>
+	</div>
+
+	<div class="style2">
+		<h2 id="payment">Payment</h2>
+		<input type="radio" name="select1" value="creditcard">Credit Card<br>
+		<input type="radio" name="select2" value="debitcard">Debit Card<br>
+		<input type="radio" name="select3" value="paypal">Pay Pal<br>
+		
+	</div>
+
+	<div class="row">
+		<div class="left">
+			<p>Name on card</p>
+			<input type="text" name="fullname" >
+			<p>Expiration</p>
+			<input type="number" name="expiry" >
+	</div>
+
+	<div class="center">
+		<p>Card Number</p>
+		<input type="number" name="cardnumber" >
+		<p>CVV</p>
+		<input type="number" name="cvv">
+
+	</div>
+</div>
+
+<div class="style2">
+<hr>
+<input class="block" type="button" name="checkout" value="Continue to checkout" size="87">
+<hr>
+</div>
+</form>
+
+</div>
+
+
+<script>
+	window.onscroll = function() {myFunction()};
+
+	var navbar = document.getElementById("navbar");
+	var sticky = navbar.offsetTop;
+
+	function myFunction() {
+	  if (window.pageYOffset >= sticky) {
+	    navbar.classList.add("sticky")
+	  } else {
+	    navbar.classList.remove("sticky");
+	  }
+	}
+</script>
+
+
+</body>
+</html>
+
+

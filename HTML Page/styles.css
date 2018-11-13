@@ -1,0 +1,166 @@
+.container{
+	margin: 0 auto;
+	width: 960px;
+	font-family: 'Lato', sans-serif;
+}
+
+.top_center{
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+	margin-top: 55px;
+}
+
+#stylefont{
+	font-weight: 300;
+	width: 900px;
+}
+
+#stylemargin{
+	margin-top: 70px;
+}
+
+.float_left{
+	float: left;
+}
+
+.float_right{
+	float: right;
+}
+
+.display_inline{
+	display: inline-block;
+	text-align: left;
+}
+
+body{
+	max-width: 1200px;
+	margin: 0 auto;
+	background-color: rgb(250,250,250);
+}
+
+.left {
+  width: 30%;
+  padding: 0 0 0 5%;
+  float: left;
+ }
+
+ .center{
+ 	width: 30%;
+ 	padding: 0 5%;
+ 	float: left;
+ }
+
+.right {
+  width: 20%;
+  padding: 0 5% 0 0;
+  float: left;
+ }
+
+ #style_head{
+ 	padding: 0 0 10px 45px ;
+ 	margin-top: 40px;
+ }
+
+ #style1{
+	margin-top: 0;
+ 	padding-top: 0;
+ }
+
+ .style2{
+ 	margin-left: 47px;
+ 	margin-top: 40px;
+ 	width: 65%
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+.block {
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: #234aff;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    color: white;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+input[type=text] {
+  	
+    padding: 8px 8px;
+  	
+    border: 1px solid grey;
+    border-radius: 4px;
+}
+
+input[type=email] {
+  	
+    padding: 8px;
+  	
+    border: 1px solid grey;
+    border-radius: 4px;
+}
+
+input[type=number] {
+   	padding: 8px 8px;
+  	
+    border: 1px solid grey;
+    border-radius: 4px;
+}
+
+
+select{
+	width: 100%;
+    padding: 12px 20px;
+  	box-sizing: border-box;
+    border: 1px solid grey;
+    border-radius: 4px;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: #234aff;
+  color: white;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 70%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
